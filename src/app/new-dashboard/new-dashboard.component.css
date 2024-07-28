@@ -1,0 +1,7 @@
+/* new-dashboard.component.css */
+.ag-theme-alpine {
+    --ag-grid-font-family: Arial, sans-serif;
+    --ag-grid-font-size: 14px;
+    /* Add other custom styles here */
+  }
+  

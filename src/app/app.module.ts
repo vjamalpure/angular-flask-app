@@ -16,6 +16,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NewDashboardComponent } from './new-dashboard/new-dashboard.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     DashboardComponent,
     UserFormDialogComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    NewDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTableModule,
     MatIconModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AgGridModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
