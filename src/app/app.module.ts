@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';  // Ensure you have AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserFormDialogComponent } from './user-form-dialog/user-form-dialog.component';
@@ -16,8 +16,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { NewDashboardComponent } from './new-dashboard/new-dashboard.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { DatePickerCellEditorComponent } from './date-picker-cell-editor/date-picker-cell-editor.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import { AgGridModule } from 'ag-grid-angular';
     UserFormDialogComponent,
     SignupComponent,
     LoginComponent,
-    NewDashboardComponent
+    NewDashboardComponent,
+    DatePickerCellEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -42,9 +47,11 @@ import { AgGridModule } from 'ag-grid-angular';
     MatIconModule,
     MatSelectModule,
     MatCheckboxModule,
-    AgGridModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    AgGridModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

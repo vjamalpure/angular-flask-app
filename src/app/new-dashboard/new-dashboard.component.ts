@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ColDef } from 'ag-grid-community';
+import { DatePickerCellEditorComponent } from '../date-picker-cell-editor/date-picker-cell-editor.component';
 
 @Component({
   selector: 'app-new-dashboard',
@@ -13,7 +14,7 @@ export class NewDashboardComponent {
       headerName: 'DOB',
       field: 'dob',
       editable: true,
-      cellEditor: 'datePickerCellEditor'
+      cellEditor: 'datePickerCellEditor' // Use custom cell editor
     },
     {
       headerName: 'Gender',
@@ -32,4 +33,8 @@ export class NewDashboardComponent {
     { userName: 'Jane Smith', dob: '1985-05-15', age: 39, gender: 'Female', phoneNumber: '098-765-4321' },
     { userName: 'Alice Johnson', dob: '1992-07-30', age: 31, gender: 'Female', phoneNumber: '555-555-5555' }
   ];
+
+  components = {
+    datePickerCellEditor: DatePickerCellEditorComponent
+  };
 }

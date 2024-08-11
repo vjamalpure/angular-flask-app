@@ -1,0 +1,75 @@
+/* Ensure mat-form-field takes up full width */
+mat-form-field {
+    width: 100%;
+    margin: 0; /* Remove margin if needed */
+    padding: 0; /* Remove padding if needed */
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+  }
+  
+  /* Style the form field input and remove the default underline */
+  mat-form-field .mat-form-field-flex {
+    background-color: #f9f9f9; /* Light background color for input field */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    height: 100%; /* Ensure input field takes up full height */
+  }
+  
+  /* Remove padding inside the input field */
+  mat-form-field .mat-form-field-infix {
+    padding: 0; /* Adjust padding if needed */
+  }
+  
+  /* Hide the default underline */
+  mat-form-field .mat-form-field-underline {
+    display: none; /* Hide the default underline */
+  }
+  
+  /* Style the label */
+  mat-form-field .mat-form-field-label {
+    color: #333; /* Dark color for the label */
+  }
+  
+  /* Style the ripple effect */
+  mat-form-field .mat-form-field-appearance-fill .mat-form-field-ripple {
+    background-color: #3f51b5; /* Ripple effect color */
+  }
+  
+  /* Style the calendar icon */
+  .mat-icon.matDatepickerToggleIcon {
+    color: #3f51b5; /* Color for the calendar icon */
+  }
+  
+  /* Style the date picker toggle button */
+  .mat-datepicker-toggle {
+    padding: 0; /* Remove padding for the toggle button */
+  }
+  
+  /* Adjust position and size of the date picker */
+  .mat-datepicker {
+    border-radius: 4px; /* Rounded corners for the date picker */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Drop shadow for better visibility */
+    z-index: 1000; /* Ensure date picker is on top */
+    width: 100%; /* Ensure the date picker matches the cell width */
+    max-width: 250px; /* Optional: limit the maximum width */
+  }
+  
+  /* Style the calendar header and buttons */
+  .mat-calendar-header {
+    background-color: #3f51b5; /* Calendar header background color */
+    color: #ffffff; /* Calendar header text color */
+  }
+  
+  /* Style the calendar cells */
+  .mat-calendar-body-cell {
+    font-size: 14px; /* Font size for calendar cells */
+  }
+  
+  /* Style selected date cell */
+  .mat-calendar-body-selected {
+    background-color: #3f51b5; /* Background color for selected date */
+    color: #ffffff; /* Text color for selected date */
+  }
+  

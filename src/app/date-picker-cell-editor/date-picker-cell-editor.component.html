@@ -1,0 +1,14 @@
+<mat-form-field class="example-full-width">
+    <input
+      matInput
+      [matDatepicker]="picker"
+      [formControl]="dateControl"
+      (dateChange)="onDateChange($event)"
+      [placeholder]="placeholder"
+    />
+    <mat-datepicker-toggle matIconSuffix [for]="picker">
+      <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  

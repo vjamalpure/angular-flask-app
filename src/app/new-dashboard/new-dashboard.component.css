@@ -1,7 +1,23 @@
 /* new-dashboard.component.css */
 .ag-theme-alpine {
-    --ag-grid-font-family: Arial, sans-serif;
-    --ag-grid-font-size: 14px;
-    /* Add other custom styles here */
-  }
-  
+  --ag-grid-font-family: Arial, sans-serif;
+  --ag-grid-font-size: 14px;
+  /* Add other custom styles here */
+}
+
+.ag-theme-alpine .ag-cell {
+  display: flex;
+  align-items: center;
+  /* Center align cell content vertically */
+  justify-content: center;
+  /* Center align cell content horizontally */
+  height: 50px;
+  /* Set the height of the cells */
+  padding: 0;
+  /* Remove padding if needed */
+}
+
+.ag-theme-alpine .ag-cell input {
+  height: 100%;
+  /* Ensure the input takes up full cell height */
+}
